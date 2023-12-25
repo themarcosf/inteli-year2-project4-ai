@@ -7,7 +7,6 @@
 # Projeto de arquitetura de software - Classificação e Taxonomia em Sourcing
 
 ## Grupo 4 - Meta+3
-<img src="./SistemaNovo/assets/logo.png" border="0" width=40% height=40%> **&** <img src="./SistemaNovo/assets/logo_grupo.png" border="0" width=30% >
 
 <br>
 
