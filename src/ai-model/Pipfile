@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+numpy = "*"
+matplotlib = "*"
+ipykernel = "*"
+openpyxl = "*"
+scikit-learn = "*"
+sentencepiece = "*"
+datasets = "*"
+transformers = {extras = ["torch"], version = "*"}
+umap-learn = "*"
+accelerate = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

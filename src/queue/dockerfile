@@ -1,0 +1,12 @@
+FROM golang:latest AS builder
+
+# Install xk6
+RUN go install go.k6.io/xk6/cmd/xk6@latest
+
+# Build k6 with xk6-kafka extension
+RUN xk6 build --with github.com/mostafa/xk6-kafka@latest
+
+FROM alpine:latest
+COPY --from=builder /go/k6 /usr/bin/k6
+
+ENTRYPOINT ["k6"]
